@@ -1,0 +1,4 @@
+github.com/devans10/pugo/pure1 v0.0.0-20200129182041-dda81bae0ea2 h1:5eORcjaCRRrtzMxh/V5JsPA/SeslfnJ4WI5cmRZTiLQ=
+github.com/devans10/pugo/pure1 v0.0.0-20200129182041-dda81bae0ea2/go.mod h1:uBsttO8Xh1yRlyvv9zrBU33t8EvWnE3ashmKcJ5liDI=
+github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
+github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
