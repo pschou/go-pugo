@@ -1,0 +1,30 @@
+dist: trusty
+sudo: required
+language: go
+go:
+- 1.11
+- 1.12
+- 1.x
+- tip
+
+before_install:
+- go get -t -v ./...
+
+install:
+# This script is used by the Travis build to install a cookie for
+# go.googlesource.com so rate limits are higher when using `go get` to fetch
+# packages that live there.
+# See: https://github.com/golang/go/issues/12933
+- bash scripts/gogetcookie.sh
+
+script:
+- make test
+- make vet
+# - make website-test
+
+branches:
+  only:
+  - master
+  
+after_success:
+- bash <(curl -s https://codecov.io/bash)
